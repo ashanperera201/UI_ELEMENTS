@@ -1,32 +1,47 @@
-.btn{
-  padding:1rem 2rem;
-  
+$color-green-dark: #00c851;
+$color-green-light-high: #b4ffd2;
+$color-green-hover-dark: #00c851;
+$color-green-hover-light: #06b34b;
+
+.btn {
+  padding: 1rem 2rem;
   font-size: 1rem;
-  color:#FFF;
-  font-weight:500;
-  text-transform:uppercase;
-  -webkit-transition-duration: 0.4s; /* Safari */
+  color: #fff;
+  font-weight: 500;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.4s;
   transition-duration: 0.4s;
 }
 
-.btn-large{
+.btn-large {
   padding: 1rem 3rem;
 }
 
-.btn-success{
-  background-color:#3FC907;
+button {
+  border: none !important;
+  outline: none !important;
 }
 
-button{
-  border:none !important;
-  outline:none !important;
-  -webkit-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
-  -moz-box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
-  box-shadow: 0px 0px 13px -1px rgba(0,0,0,0.75);
+.btn-success {
+  background-color: $color-green-dark;
 }
 
-button:hover{  
-  cursor:pointer; 
-  opacity:1.8;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+button:hover {
+  cursor: pointer;
+  opacity: 1.8;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.ripple {
+  background-position: center;
+}
+
+.ripple:hover {
+  background: $color-green-hover-dark radial-gradient(circle, transparent 1%, $color-green-hover-light 1%) center/12000%;
+}
+
+.ripple:active {
+  background-color: $color-green-light-high;
+  background-size: 100%;
+  transition: background 0s;
 }
